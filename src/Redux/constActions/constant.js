@@ -1,0 +1,3 @@
+export const ADD_TO_CART = "ADD_TO_CART";
+export const REMOVED_FROM_CART = "REMOVED_FROM_CART";
+export const EMPTY_FROM_CART = "EMPTY_FROM_CART";
