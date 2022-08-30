@@ -1,6 +1,23 @@
 .App {
   text-align: center;
 }
+/* css for product list */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo {
+  float: left;
+  margin: 0%;
+  padding: 10px;
+}
+
+.product-item {
+  border: 2px solid rgb(163, 163, 163);
+  margin: 20px;
+  padding: 20px;
+}
 /* header css */
 
 .header {
@@ -53,6 +70,39 @@
 
 .App-link {
   color: #61dafb;
+}
+.car-page-conatiner {
+  display: flex;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.car-page-conatiner table {
+  flex: 65%;
+  border-collapse: collapse;
+
+}
+
+.car-page-conatiner table td {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+.price-details {
+  flex: 35%;
+  margin: 0px 30px;
+}
+
+.price-details .adjust-price {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(231, 230, 230);
+}
+
+.price-details .adjust-price span {
+  font-size: 22px;
 }
 
 @keyframes App-logo-spin {

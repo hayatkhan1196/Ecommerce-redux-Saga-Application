@@ -12,8 +12,10 @@ export const cartReducer = (state = [], action) => {
       return [action.data, ...state];
 
     case REMOVED_FROM_CART:
-      state.length = state.length ? state.length - 1 : [];
-      return [...state];
+      // state.length = state.length ? state.length - 1 : [];
+      const filterData = state.filter((item) => item?.id !== action.data);
+
+      return [filterData];
 
     case EMPTY_FROM_CART:
       state = [];
