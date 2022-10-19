@@ -1,9 +1,10 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-
+import { productSearch } from "./../../Redux/Actions/ProductAction";
 function Header() {
   const result = useSelector((state) => state?.cartReducer);
+  const dispatch = useDispatch();
   console.log("🚀 ~ file: Header.js ~ line 6 ~ Header ~ result", result);
   return (
     <div className="header">
@@ -11,7 +12,15 @@ function Header() {
         {" "}
         <h1 className="logo">E-COMMERCE</h1>
       </Link>
-
+      <div className="search-box">
+        <input
+          type="text"
+          onChange={(event) => {
+            dispatch(productSearch(event.target.value));
+          }}
+          placeholder="search product"
+        />
+      </div>
       <Link to="/cart">
         <div className="cart_div">
           <span>{result.length}</span>

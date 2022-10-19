@@ -1,6 +1,22 @@
 import React from "react";
 
+
+
+var x = 2;
 function Test() {
+  console.log("hayat javascript");
+
+  // const objA = { a: "first", b: "second" };
+
+  // const objB = { ...objA };
+  // //objB={a:"first",b:"second"}
+
+  // objB.c="third"
+  // //objB={a:"first",b:"second",c:"third"}
+  // //objA={a:"first",b:"second",c:"third"}
+
+  // console.log("objB", objB);
+
   // let a = 12;
   // if (true) {
   //   let a = 10;
@@ -27,5 +43,6 @@ function Test() {
 
   return <div></div>;
 }
+console.log("xxxxxxxxx", x);
 
 export default Test;
