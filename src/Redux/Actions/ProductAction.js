@@ -1,8 +1,4 @@
-import {
-  PRODUCT_LIST,
-  PRODUCT_SEARCH,
-  SET_PRODUCT_LIST,
-} from "../constActions/constant.js";
+import { PRODUCT_LIST, PRODUCT_SEARCH } from "../constActions/constant.js";
 
 export const productList = () => {
   return {
